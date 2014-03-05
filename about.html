@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head profile="http://www.w3.org/2005/10/profile">
+  <title>Proximity</title>
+  <link rel="icon" 
+    type="image/png" 
+    href="http://mollietaylor.com/favicon.png">
+    <link href="stylesheet.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
+  <style>
+    ul#influences {
+      padding-left: 2em;
+    }
+
+    ul#influences li {
+      padding-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+  <div id="nav">
+    <ul>
+      <li class="title">Proximity</li>
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="interactive.html">Interactive Art Piece</a></li>
+      <li class="parent">Gallery Shows &#9660;
+        <ul class="sub-nav">
+          <li><a href="clough.html">Georgia Tech</a></li>
+          <li><a href="doo.html">dooGallery</a></li>
+        </ul></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div id="about">
+      <h1>Artist's Statement</h1>
+      <div class="about-par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta quam in mi mollis, ullamcorper dapibus lorem suscipit. Vivamus non mi interdum velit elementum elementum id nec elit. Donec vestibulum varius ante, non dictum est faucibus mollis. Sed rhoncus ullamcorper mauris, eget iaculis nisl suscipit et. Praesent nisi mauris, elementum ac convallis at, vehicula at velit. Donec sit amet dapibus urna, posuere adipiscing leo. Integer rutrum laoreet erat, ut commodo mauris. Etiam facilisis vestibulum tortor quis vulputate. Nullam vel diam ut turpis euismod ultricies. Vestibulum odio nibh, placerat sit amet consequat nec, mollis et nibh. Nulla iaculis, nulla non fermentum consequat, ipsum lorem convallis erat, eget semper enim sapien vitae ligula. Curabitur mollis lobortis nibh, vel sagittis lectus sagittis a. Aliquam tempor, massa non vestibulum pellentesque, mi sapien dapibus erat, a imperdiet enim lacus in nulla. Fusce pharetra libero eu malesuada pulvinar.</div>
+
+      <h1>About the Artist</h1>
+      <!-- bio --><div class="about-par">Quisque malesuada ligula nec pretium suscipit. In vitae placerat quam, id pellentesque urna. Aliquam erat volutpat. Cras accumsan elementum quam in vehicula. Proin magna leo, tempor vitae ipsum eget, tincidunt semper leo. Donec non venenatis mi. Vivamus accumsan eget dolor nec viverra.<br><br>For more information, visit <a href="http://www.mollietaylor.com/">mollietaylor.com</a>.</div>
+
+      <h1>Related Quotes</h1>
+      <blockquote>The appreciation of the natural scene should not be limited only to the grandeurs; the intimate details and qualitites of our immediate environment can be revealed and appreciated.<div class="source">&mdash;Ansel Adams, commencement address, Occidental College, 1961</div></blockquote>
+
+      <blockquote>A sprawling web of roads&mdash;a web so dense that petrol and tarmac seem to have replaced the natural elements of water and stone. But if you read between the roads, and look hard enough, there are still remnants of the wild to be found.<div class="source">&mdash;<a href="http://www.bbc.co.uk/programmes/b00qsxy5">Robert Macfarlane, <i>Natural World</i>, "The Wild Places of Essex"</a></div></blockquote>
+
+      <h1>Influences</h1>
+      <div class="about-par">
+        <ul id="influences">
+          <li><a href="http://www.richardlong.org/">Richard Long</a></li>
+          <li><a href="http://www.bibliotecadelbosque.net/">Miguel Ángel Blanco</a></li>
+          <li><a href="http://www.anseladams.com/">Ansel Adams</a></li>
+          <li>Frederick Law Olmsted</li>
+          <li><a href="http://www.tylicki.com/natural-art/">Jacek Tylicki</a></li>
+          <li><a href="http://www.runeguneriussen.no/">Rune Guneriussen</a></li>
+          <li><a href="http://www.andresamadorarts.com/">Andres Amador</a></li><!-- and Jim Denevan http://www.jimdenevan.com/ -->
+        </ul>
+      </div>
+
+
+    </div>
+  </div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.parent').click(function() {
+      $('.sub-nav').toggleClass('visible');
+    });
+  });
+</script>
+</body>
+</html>

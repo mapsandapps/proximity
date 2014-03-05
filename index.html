@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head profile="http://www.w3.org/2005/10/profile">
+  <title>Proximity</title>
+  <link rel="icon" 
+    type="image/png" 
+    href="http://mollietaylor.com/favicon.png">
+    <link href="stylesheet.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
+</head>
+<body>
+  <div id="nav">
+    <ul>
+      <li class="title">Proximity</li>
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="interactive.html">Interactive Art Piece</a></li>
+      <li class="parent">Gallery Shows &#9660;
+        <ul class="sub-nav">
+          <li><a href="clough.html">Georgia Tech</a></li>
+          <li><a href="doo.html">dooGallery</a></li>
+        </ul></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+
+
+  <div class="content">
+    <div id="splash">
+      <table border="0" cellpadding="0" cellspacing="0">
+      <tr><td class="splash-image" background="proximity-doo-small.jpg" valign="center">
+      <div class="splash-text">
+        <h1>Proximity</h1>
+        <p>An art project by <a href="http://www.mollietaylor.com/">Mollie Taylor</a>.</p>
+      </div>
+      </td></tr></table>
+    </div>
+  </div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.parent').click(function() {
+      $('.sub-nav').toggleClass('visible');
+    });
+  });
+</script>
+
+
+</body>
+</html>

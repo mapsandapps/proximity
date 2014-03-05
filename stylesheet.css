@@ -1,0 +1,162 @@
+/*------------------------------------*\
+  RESET
+\*------------------------------------*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{
+  margin:0;
+  padding:0;
+}
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+}
+fieldset,img{
+  border:0;
+}
+address,caption,cite,code,dfn,th,var{
+  font-style:normal;
+  font-weight:normal;
+}
+caption,th{
+  text-align:left;
+}
+q:before,q:after{
+  content:'';
+}
+abbr,acronym{
+  border:0;
+}
+
+
+
+/* MAIN */
+
+body {
+  font-family: 'Exo 2',Helvetica,sans-serif;
+  margin: 5px;
+}
+
+div#about {
+  padding: 3em;
+  max-width: 40em;
+}
+
+div.about-par {
+  padding: 1em;
+}
+
+a {
+  color: #f07300;
+}
+
+a:visited,a:hover,a:active {
+  color: #0083a3;
+}
+
+
+/*nav*/
+#nav {
+  background-color: #333;
+  list-style: none;
+  float: left;
+  width: calc(100% - 48px);
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 3em;
+  position: relative;
+  vertical-align: bottom;
+  margin-bottom: 5px;
+  z-index: 5;
+}
+
+#nav li {
+  float: left;
+  margin-right: 16px;
+  position: relative;
+  display: block;
+  color: #fff;
+}
+
+#nav li.title {
+  font-weight: bold;
+}
+
+#nav li.title:hover {
+  background-color: #333;
+}
+
+#nav li.parent {
+  cursor: pointer;
+}
+
+#nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#nav li:hover {
+  color: #fff;
+  background: #0083a3;
+}
+
+#nav ul.sub-nav {
+  display: none;
+  list-style: none;
+  float: none;
+}
+
+#nav ul.visible {
+  display: block; /*or table*/
+  clear: both;
+  float: none;
+  position: absolute;
+  padding: 0;
+  background-color: #333;
+}
+
+#nav ul li ul {
+  padding: 5px;
+}
+
+/*splash*/
+
+table {
+  width: 100%;
+}
+
+div.content {
+  width: 100%;
+}
+
+img.splash-image {
+  width: 100%;
+}
+
+td.splash-image {
+  width: 600px;
+  height: 640px;
+  vertical-align: center;
+}
+
+div.splash-text {
+  background-color: #fff;
+  opacity: .8;
+}
+
+/*quotes*/
+blockquote {
+  background-color: #faece2;
+  border-left: 10px solid #f07300;
+  margin: 1.5em 1em;
+  padding: 0.5em 10px;
+  padding-right: 2em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+div.source {
+  padding-top: 1em;
+  text-align: right;
+  width: 100%;
+}
