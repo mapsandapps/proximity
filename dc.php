@@ -15,7 +15,6 @@
       <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
   <![endif]-->
   <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
   <script src="http://mollietaylor.com/files/leaflet.markercluster-src.js"></script>
   <script src="photos-dc.js"></script>
 

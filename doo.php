@@ -7,7 +7,6 @@
     href="http://mollietaylor.com/favicon.png"><head>
   <link href="stylesheet.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
   <style>
 /*    table {
       border: 1px #f07300 solid;
