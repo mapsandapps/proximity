@@ -42,17 +42,7 @@
 </head>
 <body>
   <div id="nav">
-    <ul>
-      <li class="title">Proximity</li>
-      <li class="active"><a href="index.html">Home</a></li>
-      <li><a href="interactive.html">Interactive Art Piece</a></li>
-      <li class="parent">Gallery Shows &#9660;
-        <ul class="sub-nav">
-          <li><a href="clough.html">Georgia Tech</a></li>
-          <li><a href="doo.html">dooGallery</a></li>
-        </ul></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
+    <?php include ("navigation.php"); ?>
   </div>
 
 
@@ -62,13 +52,7 @@
 <div id="map"></div><div id="photo"></div>
 
   </div>
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('.parent').click(function() {
-      $('.sub-nav').toggleClass('visible');
-    });
-  });
-</script>
+
 <script type="text/javascript">
 
   var ring = {
@@ -86,9 +70,6 @@
   //   radius).setStyle(ring);
 
   var elliottSt = L.circle([33.7530,-84.3984],
-    radius).setStyle(ring);
-
-  var piedmont = L.circle([33.784,-84.378664],
     radius).setStyle(ring);
 
   var doo = L.circle([33.7488,-84.3573],
@@ -148,7 +129,6 @@
   var galleryMaps = {
     "Elliott Street": elliottSt,
     "Clough": clough,
-    "Piedmont Park": piedmont,
     "dooGallery": doo,
     "[none]": none
   };

@@ -23,57 +23,40 @@
       border-bottom: 1px #f07300 solid;
     }
 
-    a:link {
+    .content a:link {
       color: #007CF0;
     }
 
-    a:visited {
+    .content a:visited {
       color: #7400F0;
-    }
-
-    img {
-      max-width: 800px;
     }
   </style>
 </head>
 <body>
   <div id="nav">
-    <ul>
-      <li class="title">Proximity</li>
-      <li class="active"><a href="index.html">Home</a></li>
-      <li><a href="interactive.html">Interactive Art Piece</a></li>
-      <li class="parent">Gallery Shows &#9660;
-        <ul class="sub-nav">
-          <li><a href="clough.html">Georgia Tech</a></li>
-          <li><a href="doo.html">dooGallery</a></li>
-        </ul></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
+    <?php include ("navigation.php"); ?>
   </div>
 
 
   <div class="content">
+
+
+
 <div align="center">
-  <img src="proximity-doo.jpg">
+  <img src="proximity4-small.jpg" width="100%">
 </div>
 <table align="center">
   <tr><td width="150"><b>Name</b></td><td>Mollie Taylor</td></tr>
-  <tr><td><b>Date</b></td><td>February 2014</td></tr>
-  <tr><td><b>Submitted to</b></td><td><a href="https://www.facebook.com/events/277051915776945/">Un'arte Nuova</a></td></tr>
-  <tr><td><b>Site-specific to</b></td><td>dooGallery</td></tr>
+  <tr><td><b>Date</b></td><td>January 2014</td></tr>
+  <tr><td><b>Submitted to</b></td><td><a href="http://art.clough.gatech.edu/">Clough Art Crawl 2014</a></td></tr>
+  <tr><td><b>Site-specific to</b></td><td>Georgia Tech Clough Undergraduate Learning Commons</td></tr>
   <tr><td><b>Title</b></td><td>Proximity to Nature</td></tr>
   <tr><td valign="top"><b>Description</b></td><td>Most Atlanta nature guides require one to go far outside the City of Atlanta, but I have found that there are many opportunities far closer.<br><br>
 
-  The map depicts a circle centered on dooGallery with a radius of three miles. The locations photographed are within this radius.</td></tr>
+  The map depicts a circle centered on Clough with a radius of three miles. The locations photographed are within this radius.</td></tr>
 </table>
+
   </div>
 
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('.parent').click(function() {
-      $('.sub-nav').toggleClass('visible');
-    });
-  });
-</script>
 </body>
 </html>

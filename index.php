@@ -12,17 +12,7 @@
 </head>
 <body>
   <div id="nav">
-    <ul>
-      <li class="title">Proximity</li>
-      <li class="active"><a href="index.html">Home</a></li>
-      <li><a href="interactive.html">Interactive Art Piece</a></li>
-      <li class="parent">Gallery Shows &#9660;
-        <ul class="sub-nav">
-          <li><a href="clough.html">Georgia Tech</a></li>
-          <li><a href="doo.html">dooGallery</a></li>
-        </ul></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
+    <?php include ("navigation.php"); ?>
   </div>
 
 
@@ -32,20 +22,11 @@
       <tr><td class="splash-image" background="proximity-doo-small.jpg" valign="center">
       <div class="splash-text">
         <h1>Proximity</h1>
-        <p>An art project by <a href="http://www.mollietaylor.com/">Mollie Taylor</a>.</p>
+        <p>An art project by <a href="http://www.mollietaylor.com/">Mollie Taylor</a>.</p><!-- tagline -->
       </div>
       </td></tr></table>
     </div>
   </div>
-
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('.parent').click(function() {
-      $('.sub-nav').toggleClass('visible');
-    });
-  });
-</script>
-
 
 </body>
 </html>
