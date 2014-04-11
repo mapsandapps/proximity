@@ -46,7 +46,7 @@
       <div class="about-par"><p id="fn1"><a href="#r1">[1]</a> Robert MacFarlane</div>
 
       <h1>About the Artist</h1>
-      <!-- bio --><div class="about-par">Mollie Taylor grew up in the woods, but moved to Atlanta to go to college. She didn't have a car at college but was instead dependent on her own legs and Atlanta's meager public transportation system to get around. Coming from the woods, she sometimes wanted to get out of the city to explore nature. After carefully perusing some maps and a lot of trial and error, she realized that nature is much closer than most Atlantans realize.<br><br>Mollie is a grad student at the Georgia Institute of Technology where she studies how inventors collaborate across geographical space. For more information, visit <a href="http://www.mollietaylor.com/">mollietaylor.com</a>.</div>
+      <!-- bio --><div class="about-par"><?php include ("bio.php"); ?></div>
 
       <h1>Shows</h1>
       <div class="about-par">
@@ -54,8 +54,16 @@
           <thead><td>Location</td><td>Show</td><td>Date</td></thead>
           <tr><td>Georgia Tech</td><td>Clough Art Crawl</td><td>02/28/2014</td></tr>
           <tr><td>DooGallery</td><td>Un'arte Nuova</td><td>02/22/2014</td></tr>
-          <tr><td>Elliott Street Deli & Pub</td><td>APG Pushpin Show</td><td>12/13/2013</td></tr>
+          <tr><td>Elliott Street Deli & Pub</td><td>Atlanta Photographers Guild Pushpin Show</td><td>12/13/2013</td></tr>
         </table>
+      </div>
+
+      <h1>Press</h1>
+      <div class="about-par">
+      <img src="technique.png" width=100><br><br>
+      <a href="http://nique.net/entertainment/2014/03/06/art-crawl-demonstrates-creative-side-of-tech/" target="_blank">"Art Crawl demonstrates creative side of Tech"</a><br>
+      Jamie Rule, <i>Technique</i>, March 6, 2014<br>
+      <blockquote>Mollie Taylor’s <i>Proximity to Nature</i> argues that people do not have to go far to find sanctuary from hectic city life. As a matter of fact, this piece shows that nature can be found without leaving the city.</blockquote>
       </div>
 
 <!--       <h1>Related Quotes</h1>

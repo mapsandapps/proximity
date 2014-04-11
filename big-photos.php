@@ -14,16 +14,52 @@
   <script src="photos.js"></script> <!-- remove this later -->
   <style type="text/css">
   img#big-photo {
+    float: left;
     max-width: 500px;
     border: 10px solid #f07300;
     padding: 10px;
     margin: 10px;
   }
 
-  #map {
+  img#urban-photo {
     float: left;
-    height: 500px;
-    width: 300px;
+    max-width: 200px;
+    border: 10px solid #00c0f0;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .maps {
+    float: left;
+    width: 260px;
+  }
+
+  #map {
+    border: 2px solid #000;
+    width: 250px;
+    height: 280px;
+    margin-top, margin-bottom: 10px;
+  }
+
+  #insetMap {
+    border: 2px solid #000;
+    border-top: 0px;
+    width: 250px;
+    height: 220px;
+  }
+
+  a:visited,a:hover,a:active {
+    color: #0083a3;
+  }
+
+  .urban-icon {
+    background-image: url('prox-mollie-marker.png');
+    width: auto;
+    height: auto;
+    line-height: 46px;
+    position: relative;
+    top: -23px;
+    -webkit-filter: hue-rotate(180deg);
   }
   </style>
 </head>
@@ -33,13 +69,15 @@
   </div>
   <div class="content">
     <img src="photos/2014-02-13-brownwood.jpg" id="big-photo">
-  <div id="map">
-
-  </div>
-
-  
+    <div class="maps">
+      <div id="map"></div>
+      <div id="insetMap"></div>
+    </div>
+    <img src="photos/capitol.jpg" id="urban-photo">
   </div>
 <script type="text/javascript">
+
+  var coords = [33.7, -84.42];
 
   var photoIcon = L.icon({
     iconUrl: 'prox-mollie-marker.png',
@@ -49,23 +87,44 @@
     shadowAnchor: [0, 40],
     popupAnchor: [4, -46]
   });
-
-  var photos = L.geoJson(photoList, {
-    pointToLayer: function(feature, latlng) {
-      return L.marker(latlng, {icon: photoIcon});
-    }
-  });
   
-
   // map:
   var map = L.map('map', {
-    center: [33.7530, -84.3984],
-    zoom: 11,
+    center: [33.77, -84.37],
+    zoom: 10,
     maxZoom: 18,
-    layers: [photos]
+    attributionControl: false,
+    zoomControl: false
   });
 
   new L.StamenTileLayer("toner-lite").addTo(map);
+
+
+  L.marker(coords, {
+    icon: photoIcon
+  }).addTo(map);
+
+  L.marker([33.77, -84.37], {
+    icon: L.divIcon({
+      className: 'urban-icon',
+      iconSize: [32, 46]
+    })
+  }).addTo(map);
+
+
+  // inset map:
+  var insetMap = L.map('insetMap', {
+    center: coords,
+    zoom: 13,
+    maxZoom: 18,
+    zoomControl: false
+  });
+
+  new L.StamenTileLayer("toner-lite").addTo(insetMap);
+
+  L.marker(coords, {
+    icon: photoIcon
+  }).addTo(insetMap);
 
 </script>
 </body>

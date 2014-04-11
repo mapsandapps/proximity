@@ -160,3 +160,7 @@ div.source {
   text-align: right;
   width: 100%;
 }
+
+.about-par a {
+  color: #f07300;
+}

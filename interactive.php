@@ -132,8 +132,8 @@
     "[none]": none
   };
 
-  L.tileLayer('http://tile.cloudmade.com/d2268fb4d6a84b33b508fa5640063baf/29889/256/{z}/{x}/{y}.png', {
-    attribution: '<a href="http://thigpendesigns.com">Icon by Thigpen Designs</a> | Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
+  L.tileLayer('http://{s}.tiles.mapbox.com/v3/mollie.homn0pjf/{z}/{x}/{y}.png', {
+    attribution: '<a href="http://thigpendesigns.com">Icon by Thigpen Designs</a> | Base map <a href="https://www.mapbox.com/about/maps/">© Mapbox © OpenStreetMap</a>',
     maxZoom: 18
   }).addTo(map);
 

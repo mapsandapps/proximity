@@ -16,6 +16,29 @@ photoList = {
 	{
 		"type": "Feature",
 		"properties": {
+			"name": "Northside",
+			"date": "2014/04/05",
+			"url": "2014-04-05-dome2.jpg"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-84.404198,33.768122]
+		}
+	},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Northside",
+			"date": "2014/04/05",
+			"url": "2014-04-05-dome1.jpg"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-84.404614,33.769352]
+		}
+	},{
+		"type": "Feature",
+		"properties": {
 			"name": "Skyhaven Quarry",
 			"date": "2014/03/02",
 			"url": "2014-03-02-skyhaven.jpg"
