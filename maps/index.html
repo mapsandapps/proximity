@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head profile="http://www.w3.org/2005/10/profile">
+  <title>Proximity</title>
+  <link rel="icon" 
+    type="image/png" 
+    href="http://mollietaylor.com/favicon.png">
+
+  <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+  <!--[if lte IE 8]>
+      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+  <![endif]-->
+  <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+
+  <!-- Leaflet.shapefile -->
+  <script src="http://mollietaylor.com/files/leaflet.shpfile.js"></script>
+  <script src="http://mollietaylor.com/files/shp.min.js"></script>
+
+  <!-- Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+
+  <!-- Omnivore -->
+  <script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.0.1/leaflet-omnivore.min.js'></script>
+
+  <!-- <script src='data/wiki.js'></script> -->
+  <script src='map.js'></script>
+  
+
+  <style type="text/css">
+  body {
+    background-color: #eee;
+  }
+
+  #map {
+    float: left;
+    height: 500px;
+    width: 100%;
+  }
+
+  #photo {
+    text-align: left;
+  }
+
+  img {
+    max-width: 150px;
+    padding-left:5px;
+  }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+
+    <h1></h1>
+    <div id="map"></div><div id="photo"></div>
+
+  </div>
+
+</body>
+</html>

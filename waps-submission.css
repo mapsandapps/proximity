@@ -5,6 +5,9 @@ body {
   font-family: Helvetica,sans-serif;
   font-family: 'Exo 2',Helvetica,sans-serif;
   background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  width: 620px;
 }
 
 img#big-photo {
@@ -52,5 +55,18 @@ h1 {
   clear: both;
   float: none;
   padding: 1em;
-  width: 50ex;
+  margin-left: 40px;
+  width: 500px;
+}
+
+ul {
+  margin-left: 90px;
+  padding: 0;
+  margin-top: 0px;
+  margin-bottom: 1em;
+}
+
+.list {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }

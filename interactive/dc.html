@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head profile="http://www.w3.org/2005/10/profile">
+    <meta charset="UTF-8">
+    <link rel="icon" 
+      type="image/png" 
+      href="http://mollietaylor.com/favicon.png">
+    <title>Proximity To Nature by Mollie Taylor</title>
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+    <![endif]-->
+    <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+
+    <!-- Leaflet MarkerCluster -->
+    <link rel="stylesheet" href="http://mollietaylor.com/files/MarkerCluster.css" />
+    <link rel="stylesheet" href="http://mollietaylor.com/files/MarkerCluster.Default.css" />
+    <script src="http://mollietaylor.com/files/leaflet.markercluster-src.js"></script>
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+
+    <script src="photos-dc.js"></script>
+
+    <style type="text/css">
+    body {
+      background-color: #eee;
+    }
+
+    #main {
+      padding-top: 0;
+    }
+
+    #map {
+      float: left;
+      height: 500px;
+      width: 100%;
+    }
+
+    #photo {
+      text-align: left;
+    }
+
+    img {
+      max-width: 150px;
+      padding-left:5px;
+    }
+    </style>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-37767407-2', 'mollietaylor.com');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+  <body>
+  <div id="outer">
+    <div id="nav">
+    </div>
+    <div id="main">
+      <div id="map"></div><div id="text">The circle represents the area within a 2-mile radius of the White House.</div>
+
+        </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+
+    var ring = {
+      color: '#00c0f0',
+      fillOpacity: 0,
+      opacity: 0.8
+    };
+
+    var radius = 1609 * 2;
+
+    var photoIcon = L.icon({
+      iconUrl: 'prox-mollie-marker.png',
+      iconSize: [32, 46],
+      shadowSize: [0, 0],
+      iconAnchor: [16, 46],
+      shadowAnchor: [0, 40],
+      popupAnchor: [4, -46]
+    });
+
+    function onPhoto(feature, layer) {
+      layer.bindPopup("<a href='photos/" + feature.properties.url + "'><img src='photos/" + feature.properties.url + "' width='100px'></a>", {
+          minWidth: 100
+      });
+    };
+
+    // map:
+    var map = L.map('map', {
+      center: [38.8977, -77.0365],
+      zoom: 13,
+      maxZoom: 18
+    });
+
+    var photos = L.geoJson(photoList, {
+      onEachFeature: onPhoto,
+      pointToLayer: function(feature, latlng) {
+        return L.marker(latlng, {icon: photoIcon});
+      }
+    });
+
+    var markers = L.markerClusterGroup({
+      polygonOptions: {opacity: 0,
+        fillOpacity: 0}
+    });
+
+    markers.addLayer(photos);      // add it to the map
+    map.addLayer(markers);
+
+    L.tileLayer('http://{s}.tiles.mapbox.com/v3/mollie.homn0pjf/{z}/{x}/{y}.png', {
+      attribution: '<a href="http://thigpendesigns.com">Icon by Thigpen Designs</a> | Base map <a href="https://www.mapbox.com/about/maps/">© Mapbox © OpenStreetMap</a>',
+      maxZoom: 18
+    }).addTo(map);
+
+    L.circle([38.8977, -77.0365],
+      radius).setStyle(ring).addTo(map);
+
+  </script>
+  <script type="text/javascript" src="../nav.js"></script>
+  </body>
+</html>

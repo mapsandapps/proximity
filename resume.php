@@ -24,6 +24,7 @@
   </style>
 </head>
 <body>
+  <?php include_once("analytics.php") ?>
   <div id="nav">
     <?php include ("navigation.php"); ?>
   </div>
@@ -43,6 +44,7 @@
       <div class="about-par">
         <table>
           <thead><td>Location</td><td>Show</td><td>Date</td></thead>
+          <tr><td>TBA</td><td>Wilderness Performance Act Series</td><td>09/2014</td></tr>
           <tr><td>Georgia Tech</td><td>Clough Art Crawl</td><td align="right">02/28/2014</td></tr>
           <tr><td>DooGallery</td><td>Un'arte Nuova</td><td>02/22/2014</td></tr>
           <tr><td>Elliott Street Deli & Pub</td><td>Atlanta Photographers Guild Pushpin Show</td><td>12/13/2013</td></tr>
@@ -102,6 +104,5 @@
 
     </div>
   </div>
-
 </body>
 </html>

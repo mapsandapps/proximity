@@ -1,0 +1,17 @@
+table {
+  max-width: 800px;
+}
+
+td {
+  vertical-align: top;
+  border-top: 1px #f07300 solid;
+  border-bottom: 1px #f07300 solid;
+}
+
+.content a:link {
+  color: #007CF0;
+}
+
+.content a:visited {
+  color: #7400F0;
+}

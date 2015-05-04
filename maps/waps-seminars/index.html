@@ -1,0 +1,63 @@
+<!-- sudo gpsbabel -t -i garmin -f usb: -x track,start=2014060700,stop=2014060723 -o unicsv -F temp.csv -->
+<!-- sudo gpsbabel -t -i unicsv -f 1.csv -o gpx -F 1.gpx -->
+
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<!-- facebook image link -->
+<!-- <meta property="og:image" content="screenshot.png" /> -->
+<html>
+<head profile="http://www.w3.org/2005/10/profile">
+  <title>WAPS</title>
+  <link rel="icon" 
+    type="image/png" 
+    href="http://mollietaylor.com/favicon.png">
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+  <!--[if lte IE 8]>
+      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+  <![endif]-->
+  <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+
+  <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  <!-- Omnivore -->
+  <script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.0.1/leaflet-omnivore.min.js'></script>
+
+  <style type="text/css">
+  #map {
+    height: 650px;
+    width: 97%;
+    display: inline-block;
+  }
+
+  </style>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-37767407-2', 'mollietaylor.com');
+      ga('send', 'pageview');
+
+    </script>
+</head>
+<body>
+
+<div id="map"></div>
+
+
+<script type="text/javascript">
+  // var map = L.map('map').setView([33.73, -84.46], 13);
+  var map = L.map('map').fitBounds([[33.75, -84.43], [33.71, -84.49]]);
+</script>
+<script type="text/javascript" src="map.js"></script>
+
+
+
+
+</body>
+</html>

@@ -64,6 +64,7 @@
   </style>
 </head>
 <body>
+  <?php include_once("analytics.php") ?>
   <div id="nav">
     <?php include ("navigation.php"); ?>
   </div>

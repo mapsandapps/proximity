@@ -1,0 +1,18 @@
+body {
+  background-color: #eee;
+}
+
+#main {
+  padding-top: 0;
+  padding-right: 0;
+}
+
+#outer {
+	padding-right: 0;
+}
+
+#map {
+  float: left;
+  height: calc(100% - 20px);
+  width: calc(100% - 10px);
+}

@@ -14,6 +14,7 @@
   <link type="text/css" rel="stylesheet" href="waps-submission.css" />
 </head>
 <body>
+  <?php include_once("analytics.php") ?>
   <div class="content">
   <h1>
     1.  A brief statement of why you’re interested in the WAPS.
@@ -27,7 +28,7 @@
 
     <p class="about-par">Depending on how much space I'll have, I can either create an image like this, with the circle centered on the venue and with all the included photos having been taken inside the circle:</p>
 
-    <img src="proximity-doo.jpg">
+    <img src="proximity-doo.jpg" width="600px">
 
     <p class="about-par">Or I can show many individually-framed photos, each with a small map showing its location:</p>
 
@@ -48,7 +49,10 @@
   <p class="about-par">Participant in 10 photography shows</p>
 
   <h2>Publications</h2>
-  <p class="about-par">15 published photos (3 student literary magazines, 11 newspaper, 1 miscellaneous)</p>
+  <p class="about-par list">15 published photographs 
+  <ul><li>3 in student literary magazines</li>
+  <li>11 in newspapers</li>
+  <li>1 miscellaneous</li></ul></p>
 
   <h2>Press Mentions</h2>
     <p class="about-par"><a href="http://nique.net/entertainment/2014/03/06/art-crawl-demonstrates-creative-side-of-tech/" target="_blank">"Art Crawl demonstrates creative side of Tech"</a><br>
@@ -114,5 +118,6 @@
   }).addTo(insetMap);
 
 </script>
+
 </body>
 </html>

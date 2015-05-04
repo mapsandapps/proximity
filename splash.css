@@ -1,0 +1,29 @@
+/*splash*/
+
+#nav {
+  min-height: 620px;
+}
+
+#main {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+img.splash-image {
+  width: 100%;
+}
+
+td.splash-image {
+  width: 800px;
+  height: 640px;
+  vertical-align: center;
+}
+
+div.splash-text {
+  background-color: #fff;
+  opacity: .8;
+}
+
+.splash-text p {
+  margin-top: -20px;
+}
