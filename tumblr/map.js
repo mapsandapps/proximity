@@ -41,8 +41,10 @@ var map = L.map('map', {
 markers.addLayer(photos);      // add it to the map
 map.addLayer(markers);
 
+atlantaLayer = L.circle([90,0], 0);
+
 var galleryMaps = {
-  "Atlanta": L.circle([90,0], 0),
+  "Atlanta": atlantaLayer,
   "Portland, OR<br>Coming Soon:": L.circle([90,0], 0),
   "Auburn, AL": L.circle([90,0], 0),
   "Birmingham, AL": L.circle([90,0], 0),
@@ -59,6 +61,8 @@ var mapboxTiles = L.tileLayer('https://{s}.tiles.mapbox.com/v4/mollie.lpb871p4/{
 L.control.layers(galleryMaps, null, {
   collapsed: false
 }).addTo(map);
+
+map.addLayer(atlantaLayer);
 
 // recenter map on gallery layer change:
 map.on('baselayerchange', function(e) {
